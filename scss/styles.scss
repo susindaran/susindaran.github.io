@@ -1027,3 +1027,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
+
+/* Resume-focused portfolio content. */
+#lead-content h2 { margin-top: 20px; }
+#lead-content .lead-specialty { color: #fff; font-size: 1em; margin: 0 0 15px; }
+#about h2 { color: #fff; }
+#about .about-followup { margin-top: 18px; }
+.vtimeline-content li { margin-bottom: 12px; }
+.vtimeline-content li:last-child { margin-bottom: 0; }
+.infrastructure-project .project-info { position: relative; top: auto; transform: none; margin-left: 0; padding: 28px; text-align: left; }
+.infrastructure-project .project-info p:last-child { margin-bottom: 0; }
+#skills .skill-group { max-width: 900px; margin: 0 auto 30px; }
+#skills .skill-group h3 { color: #374054; font-size: 1.1em; font-weight: 700; margin: 0 0 12px; }
+#skills .skill-group li { font-size: 1em; }

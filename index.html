@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Susindaran Elangovan | Distributed Systems &amp; Data Infrastructure</title>
+    <meta name="description" content="Software engineer specializing in distributed systems, search, and data infrastructure. Cross-company architecture, large-scale migrations, and reliable platforms at Stripe.">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -34,7 +35,7 @@
                 <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Selected Work</a>
             </li>
             <li>
                 <a href="#skills">Skills</a>
@@ -49,6 +50,8 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Susindaran Elangovan</h1>
+            <h2>Software Engineer</h2>
+            <p class="lead-specialty">Distributed Systems &middot; Search &middot; Data Infrastructure</p>
             <div style="font-size: 3em; text-align: center;">
               <a href="https://github.com/susindaran" target="_blank" style="margin: 0.2em;"><i class="fa fa-github" aria-hidden="true"></i></a>
               <a href="https://www.linkedin.com/in/susindaran" target="_blank" style="margin: 0.2em;"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
@@ -77,9 +80,15 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Experienced software engineer with a demonstrated history of working in Full Stack development. Skilled in a wide array of frameworks and technologies
-                        and constantly exploring and learning new ones. Strong passionate engineering professional, currently pursuing Master of Science with major in Computer
-                        Science from The University of Texas at Dallas, available for internships starting Spring 2018.
+                        I build distributed systems, search platforms, and data infrastructure that teams can depend on at scale.
+                        At Stripe, I lead cross-company architecture and execution for mission-critical platforms, from unifying
+                        Dashboard search to migrating billions of documents and improving ingestion across hundreds of terabytes of data.
+                        My work has delivered multi-million-dollar annual savings, substantial latency reductions, and reusable infrastructure adopted across teams.
+                    </p>
+                    <p class="about-followup">
+                        I focus on turning complex infrastructure problems into shared platforms: aligning teams on architecture,
+                        planning phased rollouts, and building recovery, authorization, and operational reliability into the design.
+                        I also mentor engineers and build tools that make on-call analysis reliable and repeatable.
                     </p>
                 </div>
             </div>
@@ -90,49 +99,34 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="February 2017 – Present">
-                <h3>The University of Texas at Dallas</h3>
-                <h4>Software Developer - Student Worker</h4>
-                <p>
-                  Full stack development and support of QuEST Forum/TL-9000 standard services websites, in the Institute of Dala Analytics and Performance Management Lab at UTD.
-                  <br/>Tech Stack: <strong>Spring Security, JSF, Spring MVC, JSP, and Hibernate</strong>
-                </p>
-            </div>
-
-            <div data-date="July 2015 – November 2016">
-                <h3>Flipkart Internet Pvt. Ltd., Bengaluru, India</h3>
-                <h4>Software Development Engineer</h4>
+            <div data-date="July 2019 – Present">
+                <h3>Stripe</h3>
+                <h4>Software Engineer, Search &amp; Data Infrastructure</h4>
                 <ul>
-                  <li>
-                    A critical part of a team to design and develop a highly configurable, stand-alone, scalable, fail-safe, automated accounting service to validate,
-                    enrich and audit all accounting events across the entire organization with very low latency.
-                  </li>
-                  <li>
-                    Designed and developed a Multi-Tier Full Stack web application that serves as a console to create, modify, view and restore versioned configurations
-                    of the accounting service using <strong>Ruby on Rails, Dropwizard, and MongoDB.</strong>
-                  </li>
-                  <li>
-                    Designed and developed a web console and its RESTful backend service to view and analyze failed accounting entries along with necessary information
-                    such as point of failure and stack trace and with the ability to retry them in batches.
-                  </li>
-                  <li>
-                    Designed and developed an Automated Testing Framework for making RESTful API calls with the ability to make cascading calls using data from the
-                    results of previous calls.
-                  </li>
-                  <li>
-                    Made significant contributions towards setting up the Continuous Integration and Continuous Deployment pipeline and also integrated the Test
-                    Automation Framework in them
-                  </li>
+                    <li>Architected and drove a cross-company overhaul of Dashboard list-view serving, replacing fragmented backends with a unified event-driven search platform. Coordinated enrichment, massive backfills, and phased rollout, cutting organization-wide load times from 15 seconds to 5 seconds and establishing a broadly adopted architectural standard.</li>
+                    <li>Designed a reusable migration platform to repartition 26 billion documents across 32 TB, with parallel execution, checkpointed recovery, and live dual writes. Enabled large-scale infrastructure upgrades without product-code changes.</li>
+                    <li>Rearchitected search ingestion for 450 TB across five Elasticsearch clusters, saving $3 million annually, tripling per-processor throughput, and reducing p99.9 ingestion lag by 90% to under 12 seconds.</li>
+                    <li>Used CPU profiling and query analysis to eliminate 235 million database reads per day, reduce p99 hydration latency by 90%, and save $291,000 annually.</li>
+                    <li>Delivered secure cross-user caching for Trino-backed analytics, returning cache hits in approximately 100 ms while preserving fine-grained authorization and enabling scalable live-query dashboards.</li>
+                    <li>Published two internal AI agent plugins for Trino query triage and cluster scaling reports. Used deterministic AST-based configuration parsing to support reliable, repeatable on-call analysis across the team.</li>
+                    <li>Implemented India data residency through regional ingestion, cross-cluster search, and mTLS while maintaining availability. Partnered with Security and IAM to mentor an intern on context-aware search authorization.</li>
                 </ul>
             </div>
-
-            <div data-date="May 2015 – June 2015">
-                <h3>Flipkart Internet Pvt. Ltd., Bengaluru, India</h3>
+            <div data-date="May 2018 – August 2018">
+                <h3>Evernote</h3>
                 <h4>Software Engineer Intern</h4>
-                <p>
-                    Designed and developed RESTful web service called TaaS that acts as an asynchronous test execution framework and email report generator with
-                    results to the user using <strong>Dropwizard, RabbitMQ, MongoDB, Hibernate.</strong>
-                </p>
+                <ul>
+                    <li>Designed and developed a Java gRPC microservice for note-content data in a dynamically sharded MySQL store, and modified the Java backend to use multi-version concurrency control for distributed transactions.</li>
+                    <li>Identified a hot table and executed a zero-downtime migration to a separate datastore, reducing load on a single-point-of-failure datastore by approximately 15%.</li>
+                </ul>
+            </div>
+            <div data-date="March 2015 – November 2016">
+                <h3>Flipkart</h3>
+                <h4>Software Development Engineer</h4>
+                <ul>
+                    <li>Core member of the team that designed and built a configurable, fault-tolerant accounting service to validate, enrich, and audit organization-wide accounting events at low latency.</li>
+                    <li>Designed and built TaaS, a RESTful service for asynchronous test execution and automated email reporting.</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -143,11 +137,10 @@
         <div class="education-block">
             <div>
               <h4>M.S. Computer Science - Intelligent Systems</h4>
-              <span class="education-date">3.8</span>
             </div>
             <div>
               <h3>The University of Texas at Dallas</h3>
-              <span class="education-date">Current</span>
+              <span class="education-date">2019</span>
             </div>
         </div>
         <!-- End .education-block -->
@@ -155,11 +148,10 @@
         <div class="education-block">
             <div>
               <h4>B.E., Computer Science and Engineering</h4>
-              <span class="education-date">8.5/10</span>
             </div>
             <div>
               <h3>Anna University, India</h3>
-              <span class="education-date">April 2015</span>
+              <span class="education-date">2015</span>
             </div>
         </div>
         <!-- End .education-block -->
@@ -167,121 +159,28 @@
     <!-- End #education -->
 
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">Selected Infrastructure Work</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
+                <div class="project shadow-large infrastructure-project">
                     <div class="project-info">
-                        <h3>Automatic Bug Triaging</h3>
-                        <p>
-                            A Machine Learning Approach to automatically suggest potential developers for fixing a bug,
-                            by predicting the most probable software component in which the bug may reside in, using the extracted keywords
-                            from the bug description.
-                        </p>
-                        <a target="_blank" href="https://goo.gl/f1KvnT">View Project</a>
+                        <h3>A shared search architecture</h3>
+                        <p>Unified fragmented Dashboard list-view backends around an event-driven search platform. The work combined cross-company architectural alignment, data enrichment, large backfills, and a phased rollout into a shared standard adopted across teams.</p>
+                        <p><strong>Impact:</strong> Organization-wide list-view load times fell from 15 seconds to 5 seconds.</p>
                     </div>
                 </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
+                <div class="project shadow-large infrastructure-project">
                     <div class="project-info">
-                        <h3>Mercato</h3>
-                        <p>
-                            A Multi-Tier web application for online shopping built using <strong>Ruby on Rails</strong>, backed by a RESTful web service
-                            running on <strong>Dropwizard</strong> and <strong>MySQL</strong>.
-                        </p>
-                        <a target="_blank" href="https://goo.gl/oIxFbN">View Project</a>
+                        <h3>Reusable migration infrastructure</h3>
+                        <p>Built a platform for repartitioning large search datasets with parallel execution, checkpointed recovery, and live dual writes. The reusable design enabled infrastructure upgrades without changes to product code.</p>
+                        <p><strong>Scale:</strong> 26 billion documents across 32 TB.</p>
                     </div>
                 </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
+                <div class="project shadow-large infrastructure-project">
                     <div class="project-info">
-                        <h3>AutoSound</h3>
-                        <p>
-                            Android Application that can automatically change the Device’s Sound Profiles at particular recurring intervals
-                            or as a one-time activity based on the Configuration set by the User.
-                        </p>
-                        <a target="_blank" href="https://goo.gl/lwHznV">View Project</a> |
-                        <a target="_blank" href="https://goo.gl/ejZcvd">Play Store</a>
-                    </div>
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Replayer</h3>
-                        <p>
-                            A configurable automation tool, written in Python to perform Non-Functional Regression testing by relaying production
-                            load using <strong>Jmeter</strong>. Replayer uses <strong>ClusterShell</strong> and <strong>rsync</strong> to access the log files in the production machines and extract
-                            payloads, API paths and query parameters using regexes.
-                        </p>
-                        <a target="_blank" href="https://goo.gl/LZpGzs">View Project</a>
-                    </div>
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Ride Share</h3>
-                        <p>
-                          An application that allows users to offer or request a ride by specifying a source and destination positions. Awardee of
-                          “The best Social hack” of the Hackathon organized by Flipkart Internet Pvt. Ltd.
-                          <br />Tech stack: <strong>Django, dropwizard, Hibernate,</strong> and <strong>MySQL</strong>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Connect Four</h3>
-                        <p>
-                            An Android application built using <strong>Unity</strong> Game Engine, Appwarp cloud service, and C#. A real-time turn-based Online
-                            Multiplayer Game to compete with players around the World, integrated with a ranking system to enable fair matchmaking
-                            between players of equal/similar skill level and experience.
-                        </p>
-                        <a target="_blank" href="https://goo.gl/BPOyRR">Play Store</a>
-                    </div>
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Score-Live</h3>
-                        <p>
-                          A web-based application to dynamically update the scores of live events and push notification in real-time using <strong>ReactJS, Spring,</strong>
-                          and <strong>Hibernate</strong>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>The Portal Game</h3>
-                        <p>
-                          A mini challenging puzzle-like maze game developed in Java using <strong>AWT</strong>. The game runs inside its own engine that maintains
-                          the state of the game, timer and such.
-                        </p>
-                        <a target="_blank" href="https://github.com/susindaran/ThePortalGame">View Project</a>
+                        <h3>Faster, more efficient search ingestion</h3>
+                        <p>Rearchitected ingestion across five Elasticsearch clusters to improve throughput, reduce tail lag, and lower operating costs for a 450 TB search footprint.</p>
+                        <p><strong>Impact:</strong> $3 million in annual savings, 3&times; per-processor throughput, and p99.9 ingestion lag below 12 seconds.</p>
                     </div>
                 </div>
             </div>
@@ -290,40 +189,41 @@
     <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Javascript</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Android Development</li>
-            <li>Dropwizard</li>
-            <li>Guice</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Hibernate</li>
-            <li>Ruby on Rails</li>
-            <li>Jmeter</li>
-            <li>ClusterShell</li>
-            <li>Couchbase</li>
-            <li>Redis</li>
-            <li>Django</li>
-            <li>rsync</li>
-            <li>DynamoDB</li>
-            <li>Hadoop</li>
-            <li>Spring</li>
-            <li>JSF</li>
-            <li>ReactJS</li>
-            <li>MapReduce</li>
-            <li>HDFS</li>
-            <li>RabbitMQ</li>
-	    <li>Docker</li>
-	    <li>Kubernetes</li>
-	    <li>Helm</li>
-	    <li>gRPC</li>
-        </ul>
+        <h2 class="heading">Skills &amp; Technical Focus</h2>
+        <div class="skill-group">
+            <h3>Architecture &amp; Technical Leadership</h3>
+            <ul>
+                <li>Cross-company architecture</li>
+                <li>Shared platform design</li>
+                <li>Phased rollouts</li>
+                <li>Performance &amp; cost optimization</li>
+                <li>Mentorship</li>
+            </ul>
+        </div>
+        <div class="skill-group">
+            <h3>Distributed Systems</h3>
+            <ul>
+                <li>Event-driven architectures</li>
+                <li>Search &amp; indexing</li>
+                <li>Large-scale data migration</li>
+                <li>gRPC</li>
+                <li>Fine-grained authorization</li>
+            </ul>
+        </div>
+        <div class="skill-group">
+            <h3>Data &amp; Infrastructure</h3>
+            <ul>
+                <li>Elasticsearch</li><li>Trino</li><li>MySQL</li><li>MongoDB</li>
+                <li>Redis</li><li>Bigtable</li><li>DynamoDB</li><li>Kubernetes</li>
+                <li>Docker</li><li>Spark</li><li>Hadoop</li><li>HDFS</li><li>RabbitMQ</li>
+            </ul>
+        </div>
+        <div class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+                <li>Java</li><li>Python</li><li>Go</li><li>Ruby</li><li>C++</li>
+            </ul>
+        </div>
     </div>
     <!-- End #skills -->
 
